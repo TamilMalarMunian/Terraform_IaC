@@ -10,8 +10,11 @@ jobs:
     name: Terraform Pipeline
     runs-on: ubuntu-latest
 
-    steps:
+defaults:
+    run:
+        working-directory: dev
 
+steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
